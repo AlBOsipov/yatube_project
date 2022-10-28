@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}
-<title>Лев Толстой – зеркало русской революции.</title>
+<!-- Переменная груп прописана во views фукнции в context -->
+<title>Записи сообщества {{ group }} </title>
 {% endblock %}
 {% block content %}
 {{ text }}

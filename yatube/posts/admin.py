@@ -10,8 +10,11 @@ class PostAdmin(admin.ModelAdmin):
         'author',
         'group',
     ) 
+    # Содержимое поля груп можно ред в админке
     list_editable = ('group',)
+    # Доступен поиск по полю текста
     search_fields = ('text',)
+    # Доступна фильтрация по полю даты
     list_filter = ('pub_date',)
     empty_value_display = '-пусто-'
 
